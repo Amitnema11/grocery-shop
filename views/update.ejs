@@ -1,0 +1,22 @@
+<%- include("partials/header")%>
+
+
+<%- include("partials/nav")%>
+<link rel="stylesheet" href="/stylesheets/nav.css">
+
+<h1 class="m-3">Update page</h1>
+
+<form action="/update/<%= items._id%>" method="POST">
+
+    <input type="text" name="name" placeholder="Name of product" class="form-control w-25 m-3" value="<%=items.name %>">
+    
+    <input type="text" name="price" placeholder="Price of product" class="form-control w-25 m-3" value="<%=items.price %>">
+
+    <input type="url" name="image" placeholder="Image-url" id="" class="form-control w-25 m-3" value="<%=items.image %>">
+
+    <textarea name="description" placeholder="Description" class="form-control w-25 m-3" id="" cols="30" rows="10"><%=items.description %></textarea>
+
+    <button class="btn btn-success px-5 ms-3">Update</button>
+
+</form>
+<%- include("partials/footer")%>

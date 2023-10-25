@@ -1,0 +1,23 @@
+nav ul{
+    display: flex;
+    justify-content: space-between;
+  align-items: center;
+  padding: 1vmax;
+  padding-left: 2vmax;
+  padding-right: 2vmax;
+  /* background-color: rgb(26, 82, 90); */
+  background-color: royalblue;
+  
+  }
+  
+  nav ul li{
+    list-style: none;
+    
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    color: white;
+  
+  }
+  

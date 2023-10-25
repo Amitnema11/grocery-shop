@@ -1,0 +1,22 @@
+<%- include("partials/header")%>
+
+<%- include("partials/nav")%>
+
+<h1 class="m-3">Register Your Product </h1>
+
+<form action="/register" method="POST">
+
+    
+    <input type="text" name="name" placeholder="Name of product" class="form-control w-25 m-3">
+    
+    <input type="text" name="price" placeholder="Price of product" class="form-control w-25 m-3">
+
+    <input type="url" name="image" placeholder="Image-url" id="" class="form-control w-25 m-3">
+
+    <textarea name="description" placeholder="Description" class="form-control w-25 m-3" id="" cols="30" rows="10"></textarea>
+    
+
+    <button class="btn btn-success px-5 ms-3">Register</button>
+
+</form>
+<%- include("partials/footer")%>

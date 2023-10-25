@@ -1,0 +1,30 @@
+<%- include("partials/header")%>
+
+<%- include("partials/nav")%>
+
+<link rel="stylesheet" href="/stylesheets/products.css">
+
+<h1 class="ps-3">List of products</h1>
+
+<div class="show-container">
+
+
+
+<% product.forEach(function(data){ %>
+    <div class="cards">
+
+        <img src="<%=data.image %>" alt="">
+        <br> <br>
+    Name - <%=data.name %> <br>
+    Price - <%=data.price %>
+     <br>
+    Description - <%=data.description%> <br>
+
+    <a href="/update/<%=data._id %>">Update</a>  &nbsp;
+    <a href="/delete/<%=data._id %>">Delete</a> <br>
+</div>
+    
+<% }) %>
+
+</div>
+<%- include("partials/footer")%>
